@@ -10,7 +10,7 @@ describe('template spec', () => {
     cy.get('[href="/cadastros"]').click();
     cy.get('.dashboard-content__grid-vendas__button').click();
     cy.get('.myne-modal-add-products > :nth-child(1)').click();
-    cy.get('[style="transform: scale(1);"] > .myne-modal__modal-edit-cadastro-content > .myne-modal__modal-edit-cadastro-content__inputs > :nth-child(1) > .form__group > .form__label').type('teste de Exclusão');
+    cy.get('[style="transform: scale(1);"] > .myne-modal__modal-edit-cadastro-content > .myne-modal__modal-edit-cadastro-content__inputs > :nth-child(1) > .form__group > .form__label').type('AAAAAA AAAAAA AAAAAA');
         //nome
         // Atraso de 0,1 segundo
         cy.wait(100);
@@ -38,7 +38,8 @@ describe('template spec', () => {
         cy.get('[style="transform: scale(1);"] > .myne-modal__modal-edit-cadastro-content > .myne-modal__modal-edit-cadastro-content__right-subimit > :nth-child(4)').click();//salvar
         // Atraso de 0,1 segundo
         cy.wait(100);
-        cy.get(':nth-child(32) > .myne-item__cadastro-left > section > p').contains('teste de Exclusão').click();
+        cy.get(':nth-child(4) > .myne-item__cadastro-left > section > p').contains('AAAAAA AAAAAA AAAAAA').click();
+        //cy.get(':nth-child(4) > .myne-item__cadastro-left > section > p')
         cy.wait(100);
         cy.get('[style="transform: scale(1);"] > .myne-modal__modal-edit-header > .myne-modal__modal-edit-header__icons > [width="14"]').click();
         cy.wait(100);
